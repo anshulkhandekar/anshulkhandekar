@@ -27,3 +27,6 @@
 
 [![Anshul's GitHub stats](https://github-readme-stats.vercel.app/api?username=anshulkhandekar)](https://github.com/anshulkhandekar/github-readme-stats) 
 [![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=anshulkhandekar)](https://github.com/anshulkhandekar/github-readme-stats)
+
+<br>
+![Snake animation](https://github.com/anshulkhandekar/anshulkhandekar/blob/output/github-contribution-grid-snake.svg)
