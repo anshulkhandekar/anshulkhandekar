@@ -26,7 +26,7 @@
 <h1> The Snake Ate My Commits and Stats! </h1>
 
 <a href="https://github.com/anshulkhandekar/github-readme-stats">
-  <img height=200 align="center" src="https://github-readme-stats.vercel.app/api?username=anshulkhandekar" />
+  <img height=200 align="center" src="https://github-readme-stats.vercel.app/api?username=anshulkhandekar&show_icons=true&theme=dracula" />
 </a>
 <a href="https://github.com/anshulkhandekar/convoychat">
   <img height=200 align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=anshulkhandekar&layout=compact&langs_count=8&card_width=320" />
@@ -34,4 +34,4 @@
 
 <br>
 ![Snake animation]
-(https://github.com/thepiyushmalhotra/anshulkhandekar/blob/output/github-contribution-grid-snake.svg)
+(https://github.com/anshulkhandekar/anshulkhandekar/blob/output/github-contribution-grid-snake.svg)
