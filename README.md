@@ -1,6 +1,6 @@
 ![header](https://capsule-render.vercel.app/api?type=venom&color=timeGradient&height=300&section=header&text=Hi,%20I'm%20Anshul&fontSize=90&animation=twinkling&fontColor=FF0000)
 
-```yaml
+
 <h1 align="left" style="color:white; font-weight: bold;">Me Right Now:</h1>
 
 <p align="left">
@@ -23,7 +23,7 @@
 
 <br>
 <br>
-```
+
 <h1> The Snake Ate My Commits and Stats! </h1>
 
 <picture>
