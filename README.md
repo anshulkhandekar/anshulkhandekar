@@ -33,5 +33,4 @@
 </a>
 
 <br>
-![Snake animation]
-(https://github.com/anshulkhandekar/anshulkhandekar/blob/output/github-contribution-grid-snake.svg)
+<img alt="GitHub Snake" src="https://raw.githubusercontent.com/anshulkhandekar/anshulkhandekar/output/github-contribution-grid-snake.svg" />
