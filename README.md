@@ -34,4 +34,5 @@
 
 <br>
 <br>
-![Snake animation](https://github.com/anshulkhandekar/anshulkhandekar/blob/output/github-contribution-grid-snake.svg)
+![GitHub Snake Light](https://raw.githubusercontent.com/anshulkhandekar/anshulkhandekar/output/github-contribution-grid-snake.svg#gh-light-mode-only)
+![GitHub Snake Dark](https://raw.githubusercontent.com/anshulkhandekar/anshulkhandekar/output/github-contribution-grid-snake-dark.svg#gh-dark-mode-only)
