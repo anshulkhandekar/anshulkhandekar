@@ -29,7 +29,7 @@
   <img height=200 align="center" src="https://github-readme-stats.vercel.app/api?username=anshulkhandekar&theme=synthwave" />
 </a>
 <a href="https://github.com/anshulkhandekar/convoychat">
-  <img height=200 align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=anshulkhandekar&layout=compact&langs_count=1&card_width=320&theme=synthwave" />
+  <img height=200 align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=anshulkhandekar&layout=compact&langs_count=5&card_width=320&theme=synthwave" />
 </a>
 
 <picture>
