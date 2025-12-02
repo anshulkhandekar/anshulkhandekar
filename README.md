@@ -23,17 +23,3 @@
 
 <br>
 <br>
-
-<h1> The Snake Ate My Commits! </h1>
-<a href="https://github.com/anshulkhandekar/github-readme-stats">
-  <img height=200 align="center" src="https://github-readme-stats.vercel.app/api?username=anshulkhandekar&theme=synthwave" />
-</a>
-<a href="https://github.com/anshulkhandekar/convoychat">
-  <img height=200 align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=anshulkhandekar&layout=compact&langs_count=8&card_width=320&theme=synthwave" />
-</a>
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/anshulkhandekar/anshulkhandekar/output/github-contribution-grid-snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/anshulkhandekar/anshulkhandekar/output/github-contribution-grid-snake.svg">
-  <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/anshulkhandekar/anshulkhandekar/output/github-contribution-grid-snake.svg">
-</picture>
