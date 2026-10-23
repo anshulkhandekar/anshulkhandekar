@@ -1,5 +1,5 @@
-<p align="center">
-  <img src="./assets/world-in-progress.svg?v=walk-jump" width="900" alt="Hi, I'm Anshul. An explorer walks across a small island, jumps for a glowing star, and starts again." />
+[README.md](https://github.com/user-attachments/files/33893738/README.md)<p align="center">
+  <img src="./assets/anshul-world.svg?" width="900" alt="Hi, I'm Anshul. An explorer walks across a small island, jumps for a glowing star, and starts again." />
 </p>
 
 <p align="center">
