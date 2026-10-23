@@ -1,0 +1,155 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="360" viewBox="0 0 1000 360" role="img" aria-labelledby="title desc">
+  <title id="title">A little world in progress</title>
+  <desc id="desc">An imagined island takes shape from wireframe into a tiny landscape. An explorer walks along the path, jumps to reach a star, and returns to the beginning. At each catch, a colored Builder, Thinker, Dreamer, or Leader briefly overlays Anshul while the name remains faintly visible.</desc>
+  <defs>
+    <filter id="role-glow" x="-25%" y="-40%" width="150%" height="180%"><feGaussianBlur stdDeviation="3"/></filter>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#101b2b"/><stop offset="1" stop-color="#182b37"/></linearGradient>
+    <linearGradient id="land" x2="1" y2="1"><stop stop-color="#93dfbc"/><stop offset="1" stop-color="#4eaa97"/></linearGradient>
+    <linearGradient id="fade"><stop stop-color="#68cdbb" stop-opacity=".15"/><stop offset="1" stop-color="#68cdbb" stop-opacity=".65"/></linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#9cc6cd" stroke-opacity=".055"/></pattern>
+    <radialGradient id="halo"><stop stop-color="#f8cd78" stop-opacity=".23"/><stop offset="1" stop-color="#f8cd78" stop-opacity="0"/></radialGradient>
+    <style>
+      .float {animation:float 6s ease-in-out infinite}
+      .spark {animation:spark 4s ease-in-out infinite;transform-origin:733px 84px}
+      .dust {animation:twinkle 5s ease-in-out infinite}
+      .trace {stroke-dasharray:8 8;animation:trace 12s linear infinite}
+      .orbit {animation:float 7s ease-in-out infinite reverse}
+      @keyframes float {0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+      @keyframes spark {0%,100%{opacity:.75;transform:scale(.94)}50%{opacity:1;transform:scale(1.08)}}
+      @keyframes twinkle {0%,100%{opacity:.25}50%{opacity:.85}}
+      @keyframes trace {to{stroke-dashoffset:-192}}
+
+      .traveler {transform:translate(813px,240px);animation:route 10s linear infinite, reset 10s linear infinite}
+      .walker {animation:hop 10s linear infinite}
+      .leg-left {transform-origin:0px -12px;animation:stride 10s linear infinite}
+      .leg-right {transform-origin:0px -12px;animation:stride-right 10s linear infinite}
+      .arm {transform-origin:5px -24px;animation:reach 10s linear infinite}
+      .ground-shadow {animation:shadow 10s linear infinite}
+      .star-reward {transform-origin:733px 84px;animation:collect 10s linear infinite}
+      @keyframes route {0.000%{transform:translate(813.00px,240.00px)}2.667%{transform:translate(797.36px,237.80px)}5.333%{transform:translate(783.48px,235.44px)}8.000%{transform:translate(771.36px,232.91px)}10.667%{transform:translate(760.99px,230.23px)}13.333%{transform:translate(752.38px,227.39px)}16.000%{transform:translate(745.52px,224.38px)}18.667%{transform:translate(740.42px,221.21px)}21.333%{transform:translate(737.08px,217.89px)}24.000%{transform:translate(735.49px,214.40px)}26.667%{transform:translate(735.66px,210.75px)}29.333%{transform:translate(737.58px,206.94px)}32.000%{transform:translate(741.26px,202.98px)}34.667%{transform:translate(746.70px,198.85px)}37.333%{transform:translate(752.44px,194.93px)}40.000%{transform:translate(756.72px,191.19px)}42.667%{transform:translate(759.59px,187.56px)}45.333%{transform:translate(761.06px,184.06px)}48.000%{transform:translate(761.11px,180.67px)}50.667%{transform:translate(759.76px,177.39px)}53.333%{transform:translate(757.00px,174.23px)}56.000%{transform:translate(752.83px,171.19px)}58.667%{transform:translate(747.25px,168.26px)}61.333%{transform:translate(740.27px,165.45px)}64.000%{transform:translate(731.88px,162.75px)}64%,96%{transform:translate(731.88px,162.75px)}96.01%,100%{transform:translate(813px,240px)}}
+      @keyframes stride {0%{transform:rotate(-22deg)}4%{transform:rotate(22deg)}8%{transform:rotate(-22deg)}12%{transform:rotate(22deg)}16%{transform:rotate(-22deg)}20%{transform:rotate(22deg)}24%{transform:rotate(-22deg)}28%{transform:rotate(22deg)}32%{transform:rotate(-22deg)}36%{transform:rotate(22deg)}40%{transform:rotate(-22deg)}44%{transform:rotate(22deg)}48%{transform:rotate(-22deg)}52%{transform:rotate(22deg)}56%{transform:rotate(-22deg)}60%{transform:rotate(22deg)}64%{transform:rotate(-22deg)}66%,100%{transform:rotate(0deg)}}
+      @keyframes stride-right {0%{transform:rotate(22deg)}4%{transform:rotate(-22deg)}8%{transform:rotate(22deg)}12%{transform:rotate(-22deg)}16%{transform:rotate(22deg)}20%{transform:rotate(-22deg)}24%{transform:rotate(22deg)}28%{transform:rotate(-22deg)}32%{transform:rotate(22deg)}36%{transform:rotate(-22deg)}40%{transform:rotate(22deg)}44%{transform:rotate(-22deg)}48%{transform:rotate(22deg)}52%{transform:rotate(-22deg)}56%{transform:rotate(22deg)}60%{transform:rotate(-22deg)}64%{transform:rotate(22deg)}66%,100%{transform:rotate(0deg)}}
+      @keyframes reset {0%{opacity:0}4%,91%{opacity:1}96%,100%{opacity:0}}
+      @keyframes hop {0%,64%,86%,100%{transform:translateY(0)}68%{transform:translateY(3px)}72%{transform:translateY(-36px)}76%,78%{transform:translateY(-52px)}82%{transform:translateY(-35px)}}
+      @keyframes reach {0%,66%,86%,100%{transform:rotate(0deg)}72%,80%{transform:rotate(-45deg)}}
+      @keyframes shadow {0%,66%,86%,100%{opacity:.3;transform:scale(1)}76%,78%{opacity:.12;transform:scale(.6)}}
+      @keyframes collect {0%,75%{opacity:1;transform:scale(1)}78%{opacity:1;transform:scale(1.5)}82%,96%{opacity:0;transform:scale(.5)}100%{opacity:1;transform:scale(1)}}
+
+      /* Facing: he turns (scaleX passes through 0) whenever the path changes horizontal direction. */
+      .facing {animation:face 10s linear infinite}
+      @keyframes face {0%,23.5%{transform:scaleX(-1)}25.5%,46%{transform:scaleX(1)}48%,100%{transform:scaleX(-1)}}
+      .lean {transform-origin:0px -12px;animation:lean 10s ease-in-out infinite}
+      @keyframes lean {0%,62%{transform:rotate(5deg)}66%,88%{transform:rotate(0deg)}94%,100%{transform:rotate(5deg)}}
+      .bag-swing {transform-origin:-7px -17px;animation:bag-swing 10s ease-in-out infinite}
+      @keyframes bag-swing {0%{transform:rotate(7deg)}4%{transform:rotate(-4deg)}8%{transform:rotate(7deg)}12%{transform:rotate(-4deg)}16%{transform:rotate(7deg)}20%{transform:rotate(-4deg)}24%{transform:rotate(7deg)}28%{transform:rotate(-4deg)}32%{transform:rotate(7deg)}36%{transform:rotate(-4deg)}40%{transform:rotate(7deg)}44%{transform:rotate(-4deg)}48%{transform:rotate(7deg)}52%{transform:rotate(-4deg)}56%{transform:rotate(7deg)}60%{transform:rotate(-4deg)}64%{transform:rotate(7deg)}66%,100%{transform:rotate(0deg)}}
+      .back-arm {transform-origin:-6px -23px;animation:arm-swing 10s ease-in-out infinite}
+      @keyframes arm-swing {0%{transform:rotate(14deg)}4%{transform:rotate(-14deg)}8%{transform:rotate(14deg)}12%{transform:rotate(-14deg)}16%{transform:rotate(14deg)}20%{transform:rotate(-14deg)}24%{transform:rotate(14deg)}28%{transform:rotate(-14deg)}32%{transform:rotate(14deg)}36%{transform:rotate(-14deg)}40%{transform:rotate(14deg)}44%{transform:rotate(-14deg)}48%{transform:rotate(14deg)}52%{transform:rotate(-14deg)}56%{transform:rotate(14deg)}60%{transform:rotate(-14deg)}64%{transform:rotate(14deg)}66%,100%{transform:rotate(0deg)}}
+      .real-name {animation:name-mask 10s ease-in-out infinite}
+      @keyframes name-mask {0%,72%,92%,100%{opacity:1}78%,84%{opacity:.22}}
+      .role {opacity:0;transform:translate(7px,3px) rotate(-6deg);transform-origin:44px 169px}
+      .role-builder {animation:role-builder 80s ease-in-out infinite}
+      @keyframes role-builder {0%{opacity:0}100%{opacity:0}9.0000%{opacity:0}9.7500%{opacity:0.92}10.5000%{opacity:0.92}11.5000%{opacity:0}71.5000%{opacity:0}72.2500%{opacity:0.92}73.0000%{opacity:0.92}74.0000%{opacity:0}}
+      .role-thinker {animation:role-thinker 80s ease-in-out infinite}
+      @keyframes role-thinker {0%{opacity:0}100%{opacity:0}34.0000%{opacity:0}34.7500%{opacity:0.92}35.5000%{opacity:0.92}36.5000%{opacity:0}96.5000%{opacity:0}97.2500%{opacity:0.92}98.0000%{opacity:0.92}99.0000%{opacity:0}}
+      .role-dreamer {animation:role-dreamer 80s ease-in-out infinite}
+      @keyframes role-dreamer {0%{opacity:0}100%{opacity:0}21.5000%{opacity:0}22.2500%{opacity:0.92}23.0000%{opacity:0.92}24.0000%{opacity:0}59.0000%{opacity:0}59.7500%{opacity:0.92}60.5000%{opacity:0.92}61.5000%{opacity:0}}
+      .role-leader {animation:role-leader 80s ease-in-out infinite}
+      @keyframes role-leader {0%{opacity:0}100%{opacity:0}46.5000%{opacity:0}47.2500%{opacity:0.92}48.0000%{opacity:0.92}49.0000%{opacity:0}84.0000%{opacity:0}84.7500%{opacity:0.92}85.5000%{opacity:0.92}86.5000%{opacity:0}}
+      @media(prefers-reduced-motion:reduce){.float,.spark,.dust,.trace,.orbit,.traveler,.walker,.leg-left,.leg-right,.arm,.ground-shadow,.star-reward,.real-name,.role,.facing,.lean,.bag-swing,.back-arm{animation:none}.traveler{transform:translate(748px,198px)}}
+    </style>
+  </defs>
+  <rect width="1000" height="360" rx="18" fill="url(#bg)"/>
+  <rect width="1000" height="360" rx="18" fill="url(#grid)"/>
+  <g font-family="ui-monospace, SFMono-Regular, Consolas, monospace">
+    <text x="44" y="123" fill="#f0eee5" font-size="48" font-family="Georgia, serif">Hey, I’m</text>
+    <text class="real-name" x="44" y="169" fill="#f0eee5" font-size="48" font-family="Georgia, serif">Anshul.</text>
+  </g>
+  <!-- Colored aliases surface over the still-visible name at star collection. -->
+  <g class="role role-builder" fill="#bf364c" font-size="48" font-family="Georgia, serif" aria-hidden="true">
+    <text x="44" y="169" filter="url(#role-glow)" opacity=".85">a Builder</text>
+    <text x="44" y="169">a Builder</text>
+  </g>
+  <g class="role role-thinker" fill="#188a63" font-size="48" font-family="Georgia, serif" aria-hidden="true">
+    <text x="44" y="169" filter="url(#role-glow)" opacity=".85">a Thinker</text>
+    <text x="44" y="169">a Thinker</text>
+  </g>
+  <g class="role role-dreamer" fill="#9651c5" font-size="48" font-family="Georgia, serif" aria-hidden="true">
+    <text x="44" y="169" filter="url(#role-glow)" opacity=".85">a Dreamer</text>
+    <text x="44" y="169">a Dreamer</text>
+  </g>
+  <g class="role role-leader" fill="#386cc3" font-size="48" font-family="Georgia, serif" aria-hidden="true">
+    <text x="44" y="169" filter="url(#role-glow)" opacity=".85">a Leader</text>
+    <text x="44" y="169">a Leader</text>
+  </g>
+  <ellipse cx="718" cy="303" rx="160" ry="17" fill="#080e18" opacity=".35"/>
+  <g class="float">
+    <!-- The unfinished half exposes the geometry behind the landscape. -->
+    <g fill="none" stroke="url(#fade)" stroke-width="1.2">
+      <path d="M435 192L592 108L734 176L581 260ZM435 192L467 252L581 309L581 260M581 309L702 243L734 176"/>
+      <path d="M475 171L622 238M514 150L660 217M553 129L698 197M474 213L629 127M511 235L667 145M549 253L705 164M435 192L581 309L592 108M467 252L734 176"/>
+    </g>
+    <path class="trace" d="M435 192L592 108L734 176" stroke="#91e2cb" stroke-width="1.5" fill="none" opacity=".6"/>
+    <!-- Finished island: faceted rock, meadow, and a winding footpath. -->
+    <path d="M588 203L744 121L920 205L759 291Z" fill="#325465"/>
+    <path d="M588 203L619 257L759 311L759 259Z" fill="#294756"/>
+    <path d="M759 259L920 205L876 266L759 311Z" fill="#203e4c"/>
+    <path d="M619 257L693 240L759 311M876 266L817 241L759 311" stroke="#436573" stroke-width="1" fill="none"/>
+    <path d="M588 203L744 121L920 205L759 259Z" fill="url(#land)"/>
+    <path d="M588 203L759 259L920 205L919 214L759 269L590 211Z" fill="#3b8178"/>
+    <path d="M690 154Q792 170 748 198T813 240" stroke="#d4dfb3" stroke-width="15" fill="none"/>
+    <path d="M690 154Q792 170 748 198T813 240" stroke="#eee4bc" stroke-width="10" fill="none"/>
+    <!-- Three small sculpted trees. -->
+    <g stroke="#665d4c" stroke-width="5"><path d="M658 182V147M824 190V139M861 209V177"/></g>
+    <g fill="#307b70"><path d="M658 112L637 154H679Z"/><path d="M824 94L795 150H853Z"/><path d="M861 145L842 183H880Z"/></g>
+    <g fill="#4b9e83"><path d="M658 112V154H637Z"/><path d="M824 94V150H795Z"/><path d="M861 145V183H842Z"/></g>
+    <g fill="#b1e9bd"><ellipse cx="638" cy="209" rx="6" ry="3"/><ellipse cx="837" cy="218" rx="5" ry="2.5"/><ellipse cx="784" cy="151" rx="4" ry="2"/></g>
+    <g fill="#efd18e"><circle cx="647" cy="203" r="2"/><circle cx="846" cy="215" r="2"/><circle cx="692" cy="218" r="2"/></g>
+    <!-- The traveler and ground shadow share the path; only the body jumps. -->
+    <g class="traveler">
+      <ellipse class="ground-shadow" cx="0" cy="0" rx="12" ry="4" fill="#286b65" opacity=".3"/>
+      <g class="walker">
+        <g class="facing">
+          <!-- Drawn facing +x; .facing mirrors him to match the path direction. -->
+          <g stroke="#283e51" stroke-width="4" stroke-linecap="round">
+            <path class="leg-left" d="M-4 -12L-4 -1"/>
+            <path class="leg-right" d="M4 -12L4 -1"/>
+          </g>
+          <g class="lean">
+            <!-- Satchel rides behind him at the back hip, swinging with each step. -->
+            <g class="bag-swing">
+              <path d="M-7 -17L-11 -15.5" stroke="#6e4630" stroke-width="1.6" stroke-linecap="round"/>
+              <rect x="-17" y="-18" width="9" height="12" rx="2.6" fill="#9c6844" stroke="#704831" stroke-width=".8"/>
+              <path d="M-17.2 -16Q-12.5 -13.2 -7.8 -16V-17.2Q-12.5 -19.5 -17.2 -17.2Z" fill="#c08b5b"/>
+              <rect x="-15.4" y="-11.5" width="5.8" height="3.8" rx="1.3" fill="#ba8555"/>
+              <rect x="-13.5" y="-15.6" width="2" height="3" rx=".5" fill="#e6bf77"/>
+              <path d="M-16.4 -8L-8.6 -8" stroke="#80573c" stroke-width=".6" stroke-opacity=".7"/>
+            </g>
+            <g class="back-arm"><path d="M-6 -23L-9 -15" stroke="#d9a75c" stroke-width="4" stroke-linecap="round"/></g>
+            <!-- Torso: back panel shaded, small collar/zip line toward the facing side. -->
+            <rect x="-8" y="-28" width="17" height="18" rx="5" fill="#efbd70"/>
+            <path d="M-8 -23V-15Q-8 -10 -3 -10H-2V-28H-3Q-8 -28 -8 -23Z" fill="#d9a75c" opacity=".55"/>
+            <path d="M6 -27V-12" stroke="#d9a75c" stroke-width="1" stroke-linecap="round"/>
+            <!-- Crossbody strap: front shoulder, diagonally across the chest, down to the back hip. -->
+            <path d="M3.5 -28.6Q-0.5 -21 -7.4 -16.6" fill="none" stroke="#5c3a27" stroke-width="2.6" stroke-linecap="round"/>
+            <path d="M3.5 -28.6Q-0.5 -21 -7.4 -16.6" fill="none" stroke="#8a5a3b" stroke-width="1.6" stroke-linecap="round"/>
+            <rect x="-1.6" y="-23.2" width="2.6" height="2.2" rx=".5" fill="none" stroke="#e6bf77" stroke-width=".7" transform="rotate(-42 -.3 -22.1)"/>
+            <path class="arm" d="M5 -24L12 -30" stroke="#efbd70" stroke-width="4" stroke-linecap="round"/>
+            <circle cx="0" cy="-35" r="8" fill="#ead1b5"/>
+            <path d="M-8 -36Q-9 -47 1 -44Q9 -45 8 -37" fill="#263a4c"/>
+            <!-- Profile cues: hair falls to the back of the head, eye and nose point forward. -->
+            <path d="M-8 -37Q-9 -31 -5.5 -29.5Q-4 -33 -3 -38Z" fill="#263a4c"/>
+            <ellipse cx="-2" cy="-34.5" rx="1.4" ry="1.9" fill="#d9b796"/>
+            <circle cx="4.6" cy="-35.6" r="1.1" fill="#263a4c"/>
+            <path d="M7.6 -34.6Q9.2 -33.6 7.8 -32.6" fill="none" stroke="#d2ad8c" stroke-width="1" stroke-linecap="round"/>
+            <circle cx="3.8" cy="-32.4" r="1.3" fill="#eaa98f" opacity=".55"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g class="star-reward">
+    <g class="spark"><circle cx="733" cy="84" r="48" fill="url(#halo)"/><path d="M733 68L738 79L749 84L738 89L733 100L728 89L717 84L728 79Z" fill="#ffdc91"/><path d="M733 72V96M721 84H745" stroke="#fff4d1" stroke-width="1"/></g>
+    </g>
+  </g>
+  <g class="orbit" fill="none" stroke="#78baa9" opacity=".6"><path d="M539 90L548 85L557 90L548 95ZM539 90V100L548 105L557 100V90M548 95V105"/><path d="M907 126L915 122L923 126L915 130ZM907 126V135L915 139L923 135V126M915 130V139"/></g>
+  <g class="dust" fill="#a6d9ce"><circle cx="611" cy="70" r="2"/><circle cx="882" cy="79" r="1.5"/><circle cx="946" cy="242" r="2"/><circle cx="525" cy="286" r="1.5"/><circle cx="789" cy="52" r="1.5"/></g>
+</svg>
