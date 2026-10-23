@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/world-in-progress.svg" width="900" alt="Hi, I'm Anshul. An animated island transitions from wireframe to a landscape with trees and a small explorer." />
+  <img src="./assets/world-in-progress.svg" width="900" alt="Hi, I'm Anshul. An explorer walks across a small island, jumps for a glowing star, and starts again." />
 </p>
 
 <p align="center">
@@ -9,9 +9,9 @@
 
 <br>
 
-I enjoy having an idea and figuring out enough to actually make it. That's what draws me to software, and why I like working across different kinds of projects. There's always something else to learn when you try to build something you haven't made before.
+I have ideas that I sit with for days, sometimes weeks, before I finally start building. **Being able to turn something I've imagined into something real is what makes computer science so exciting to me.** I enjoy the design just as much as the programming, and I like having the freedom to follow an idea wherever it takes me.
 
-**I care about how things feel to use.** The design and animation are part of the fun for me, alongside the code that makes everything work. I'm interested in AI for much the same reason I'm interested in building software in general—it gives me more ways to explore an idea and see what I can do with it.
+I know there's a lot of worry about AI taking the human element out of creative work. I see it differently. The ideas we choose to pursue still come from our own experiences, tastes, and imperfections. Having better tools to explore them feels like an opportunity to me. As a student learning while all of this is changing, I've never felt more confident that I can learn what I need to bring an idea to life.
 
 <br>
 
