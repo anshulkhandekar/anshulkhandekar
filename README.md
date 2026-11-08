@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/anshul-world.svg?" width="900" alt="Hi, I'm Anshul. An explorer walks across a small island, jumps for a glowing star, and starts again." />
+  <img src="./assets/anshul-world.svg?" width="900" alt="Hi, I'm Anshul. An animated island and tools I build with." />
 </p>
 
 <p align="center">
